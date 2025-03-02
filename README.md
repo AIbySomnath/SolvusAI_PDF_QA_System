@@ -1,5 +1,5 @@
 # SolvusAI: Llama3-Powered PDF Q&A 🚀📄
- 
+
 ## 📌 Introduction
 SolvusAI is an advanced AI-powered PDF Q&A system leveraging **Llama3** and **Groq API** to enable intelligent document processing. This application allows users to **upload PDF files**, **extract insights**, and **interact via a chatbot** to receive accurate and context-aware responses.
 
@@ -14,6 +14,7 @@ With **cutting-edge Retrieval-Augmented Generation (RAG)** and **state-of-the-ar
 ✅ **Interactive UI** – Seamlessly interact through a user-friendly **Streamlit** interface.  
 ✅ **Scalable & Optimized** – Leverages **Groq API** for fast and accurate inference.  
 ✅ **Secure & Private** – No data storage; responses are generated in real-time.  
+✅ **Multi-Format Support** – Handles PDF, DOC, text, and even image-based documents.  
 
 ---
 
@@ -36,6 +37,26 @@ With **cutting-edge Retrieval-Augmented Generation (RAG)** and **state-of-the-ar
 
 ---
 
+## 🚀 Live Demo
+🔗 Try it out here: [SolvusAI Live Demo](https://solvusaipdfappsystem-ekuropqqzraatdzzjjz8yn.streamlit.app/)  
+🎥 **Demo Video:** [Click Here](streamlit-app-2024-07-14-01-07-88.mp4)  
+
+---
+
+## ⚡ Challenges & General Problems Solved
+
+### 🏆 Overcoming OCR & Low-Quality Document Limitations
+Many AI-powered document processing tools, including **ChatGPT, Gemini, and other LLMs**, struggle with low-quality, blurred, or handwritten PDFs. **Traditional OCR models often fail to extract meaningful data**, leading to incomplete or incorrect responses. However, SolvusAI has been designed to **excel in low-quality and multi-format document processing** by:
+
+✅ **Leveraging Multimodal Capabilities** – Unlike other models, SolvusAI can process PDFs, DOC files, plain text, and even images with embedded text.  
+✅ **Advanced OCR Integration** – Our pipeline enhances **text recognition** and **information extraction**, ensuring reliable results even for **blurred, noisy, or handwritten** documents.  
+✅ **Robust Preprocessing** – Implementing **image enhancement and adaptive thresholding** to improve OCR accuracy before embedding creation.  
+✅ **Optimized for Real-World Use** – Works well with scanned contracts, historical records, invoices, and other complex documents where standard OCR fails.  
+
+This unique capability sets SolvusAI apart from other LLM-powered PDF Q&A solutions and ensures **high reliability in diverse scenarios**.  
+
+---
+
 ## 🛠️ Installation & Setup
 ### Prerequisites:
 - Python 3.8+
@@ -51,17 +72,22 @@ cd SolvusAI_QA
 # Install dependencies
 pip install -r requirements.txt
 
-# Set up environment variables
-export GROQ_API_KEY=your_groq_api_key
-
 # Run the application
 streamlit run app.py
 ```
 
----
-
-## 🚀 Live Demo
-🎥 **Demo Video:** [Click Here](streamlit-app-2024-07-14-01-07-88.mp4)  
+### Setting Up API Key
+To securely store the **Groq API Key**, follow these steps:
+1️⃣ **Using Streamlit Secrets Manager**  
+   - Open your Streamlit app → **Settings** → **Secrets**  
+   - Add the following entry:  
+     ```ini
+     GROQ_API_KEY = "your-api-key-here"
+     ```
+2️⃣ Alternatively, use environment variables:  
+   ```bash
+   export GROQ_API_KEY=your-api-key-here
+   ```
 
 ---
 
@@ -88,5 +114,4 @@ For any queries or issues, please contact:
 ---
 
 🔥 **Transform Your PDFs into Actionable Insights – Try SolvusAI Today!** 🔥
-
 
