@@ -18,7 +18,7 @@ load_dotenv()
 groq_api_key = os.getenv('GROQ_API_KEY')
 
 
-st.markdown("<h2 style='text-align: center;'>PDF Insights: Interactive Q&A with Llama3 & Groq API</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;'>SolvusAI: Llama3-Powered PDF Q&A 🚀📄</h2>", unsafe_allow_html=True)
 
 
 llm = ChatGroq(groq_api_key=groq_api_key, model_name="Llama3-8b-8192")
