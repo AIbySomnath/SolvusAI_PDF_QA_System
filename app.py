@@ -72,6 +72,4 @@ if "vector_store" in st.session_state:
             response = retrieval_chain.invoke({'input': user_prompt})
             st.write(f"**🤖 AI Answer:** {response['answer']}")
         else:
-            st.error("❌ Please enter a question!")
-else:
-    st.error("❌ No document found! Please upload a PDF and create a vector DB first.")
+            st.error("⚠️ Please enter a question!")
