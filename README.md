@@ -1,5 +1,5 @@
 # SolvusAI: Llama3-Powered PDF Q&A 🚀📄
-
+ 
 ## 📌 Introduction
 SolvusAI is an advanced AI-powered PDF Q&A system leveraging **Llama3** and **Groq API** to enable intelligent document processing. This application allows users to **upload PDF files**, **extract insights**, and **interact via a chatbot** to receive accurate and context-aware responses.
 
